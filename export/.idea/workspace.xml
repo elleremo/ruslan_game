@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71cce869-cee3-4098-9a21-6141ee5f5232" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/.import/ball.png-9a4ca347acb7532f6ae347744a6b04f7.md5" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/.import/ball.png-9a4ca347acb7532f6ae347744a6b04f7.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/.import/ball.png-9a4ca347acb7532f6ae347744a6b04f7.stex" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/.import/ball.png-9a4ca347acb7532f6ae347744a6b04f7.stex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/KinematicBody2D.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/background.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/background.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/ball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/ball.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/ball.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/ball.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/ball.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/default_env.tres" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/default_env.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/export_presets.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/export_presets.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/floor.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/floor.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/floor.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/floor.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/gameview.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/gameview.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/icon.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/icon.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/main.gd" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/main.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/main.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/middle_line.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/middle_line.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/platform.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/platform.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/platform.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/platform.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BallsGame/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/../../BallsGame/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/Water.PNG-7ed5eb7882eff9b40eb3961572232af9.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/Water.PNG-7ed5eb7882eff9b40eb3961572232af9.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/WaterPressure.PNG-4a8f4c4ba68628fb28621ff5d34c3dfe.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/WaterPressure.PNG-4a8f4c4ba68628fb28621ff5d34c3dfe.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/WaterViscosity.PNG-a83f823455b72c13916be0733014f682.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/WaterViscosity.PNG-a83f823455b72c13916be0733014f682.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/halo.png-ea4bc798a256110dec978539aea7cfca.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/halo.png-ea4bc798a256110dec978539aea7cfca.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Camera2D.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Constants.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/GUIBar.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Grid.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Main.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Particle.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/SPHsolver.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/Water.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/Water.PNG.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/WaterPressure.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/WaterPressure.PNG.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/WaterViscosity.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water Screenshots/WaterViscosity.PNG.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/Water.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/default_env.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/halo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/halo.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/lava_preset.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/project.godot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/vis_pressure.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/vis_viscosity.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fluid/water_preset.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/bullet.png-ff1424653e10246c11e3724e402c519e.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/bullet.png-ff1424653e10246c11e3724e402c519e.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/coin.png-7e710de472b75b3653c3283ef5153eb4.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/coin.png-7e710de472b75b3653c3283ef5153eb4.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/enemy.png-f7d9f81714867a24a08e299bb600e611.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/enemy.png-f7d9f81714867a24a08e299bb600e611.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/moving_platform.png-1ef2f9fd1684df90d6ad38a267c1201b.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/moving_platform.png-1ef2f9fd1684df90d6ad38a267c1201b.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/music.ogg-3bd46d3a4b41702b152014078d12a390.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/music.ogg-3bd46d3a4b41702b152014078d12a390.oggstr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/one_way_platform.png-af40161497fd0e8bfbc5d400c8bd650a.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/one_way_platform.png-af40161497fd0e8bfbc5d400c8bd650a.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_fire.png-e657a73546eb75918e9d9a3fea15cf70.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_fire.png-e657a73546eb75918e9d9a3fea15cf70.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_jump.png-dbbef3b47abbb562ce6c81a9701121c6.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_jump.png-dbbef3b47abbb562ce6c81a9701121c6.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_left.png-fc7230aeb0eec74933ed08f89b893288.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_left.png-fc7230aeb0eec74933ed08f89b893288.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_right.png-5cf5add2dbc1c8dde17173ac56f3a004.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/osb_right.png-5cf5add2dbc1c8dde17173ac56f3a004.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/robot_demo.png-8502817e0037b3f31eaca3dae49dcfc5.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/robot_demo.png-8502817e0037b3f31eaca3dae49dcfc5.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_1.png-bad76c04aedb60c1b863fc1c1c6387ee.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_1.png-bad76c04aedb60c1b863fc1c1c6387ee.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_2.png-cb251e8e91cb5450d56a9d0584943db0.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_2.png-cb251e8e91cb5450d56a9d0584943db0.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_3.png-6bbd67870db2f55a0c1b4685aa91e57c.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_cloud_3.png-6bbd67870db2f55a0c1b4685aa91e57c.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_fg_1.png-af0d9d2847aea6e03f54efcc2d9b6f06.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_fg_1.png-af0d9d2847aea6e03f54efcc2d9b6f06.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_fg_2.png-2419a5b3b81617ba71d0ad50d23bf6f1.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_fg_2.png-2419a5b3b81617ba71d0ad50d23bf6f1.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_sky.png-df3e8b7d076f566a7bd83c6d4f9b57cf.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/scroll_bg_sky.png-df3e8b7d076f566a7bd83c6d4f9b57cf.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_coin.wav-b4defacd1a1eab95585c7b5095506878.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_coin.wav-b4defacd1a1eab95585c7b5095506878.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_explode.wav-23e94be75a4346bffb517c7e07035977.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_explode.wav-23e94be75a4346bffb517c7e07035977.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_hit.wav-d8455980ada2d4a9a73508948d7317cc.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_hit.wav-d8455980ada2d4a9a73508948d7317cc.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_jump.wav-4966d1f327e26a176b56ab335c03b5e1.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_jump.wav-4966d1f327e26a176b56ab335c03b5e1.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_shoot.wav-f0f26619cba21d411b53ad23b8788116.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/sound_shoot.wav-f0f26619cba21d411b53ad23b8788116.sample" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/tiles_demo.png-7ca5c7c5c02ab8abe0d585a6a8f086bd.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/.import/tiles_demo.png-7ca5c7c5c02ab8abe0d585a6a8f086bd.stex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/bullet.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/bullet.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/bullet.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/coin.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/coin.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/coin.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/enemy.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/enemy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/enemy.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/enemy.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/icon.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/moving_platform.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/moving_platform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/moving_platform.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/moving_platform.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/music.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/music.ogg.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/one_way_platform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/one_way_platform.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/one_way_platform.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_fire.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_jump.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_jump.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_left.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/osb_right.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/parallax_bg.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/player.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/player.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/project.godot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/robot_demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/robot_demo.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_1.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_2.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_cloud_3.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_fg_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_fg_1.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_fg_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_fg_2.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/scroll_bg_sky.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_coin.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_coin.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_explode.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_explode.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_hit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_hit.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_jump.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_jump.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_shoot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/sound_shoot.wav.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/stage.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/tiles_demo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/tiles_demo.png.import" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/tileset.tres" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../platt/tileset_edit.tscn" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1362">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/export.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/discord.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="export" type="b2602c69:ProjectViewProjectNode" />
+              <item name="export" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71cce869-cee3-4098-9a21-6141ee5f5232" name="Default Changelist" comment="" />
+      <created>1574810723653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574810723653</updated>
+      <workItem from="1574810726630" duration="1112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1112000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1294" height="1057" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32962137" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.wasm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1362">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
