@@ -74,3 +74,13 @@ position = Vector2( 580, 540 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 501.0
+margin_top = 27.0
+margin_right = 642.0
+margin_bottom = 110.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "WASD
+and 
+Mouse click"
