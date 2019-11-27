@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://res/cube.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends KinematicBody2D
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+export var speed = -500;
+export var grav = 1000;
+var velocity = Vector2(speed,0);
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	print('hello')
+	pass # Replace with function body.
+
+func _process(delta):
+	velocity.y += grav*delta;
+	move_and_slide(velocity) 
+	#position = Vector2(  speed*delta,  grav*delta)
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 50, 50 )
+
+[node name="cube" type="KinematicBody2D"]
+script = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.402572, 0.402572 )
+shape = SubResource( 2 )
+
+[node name="cube" type="Sprite" parent="CollisionShape2D"]
+texture = ExtResource( 1 )
