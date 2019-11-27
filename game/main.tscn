@@ -65,6 +65,7 @@ position = Vector2( 320, 430 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="cube" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 505.6, 439.6 )
 scale = Vector2( 0.5, 0.5 )
 
