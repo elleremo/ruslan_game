@@ -44,7 +44,6 @@ func push_cube(mouse_pos):
 	 #.add_child(cube);
 	cube.set_position(mouse_pos);
 	add_child(cube)
-	cube;
 	pass
 	#print(mouse_pos);
 	#add_child();                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
