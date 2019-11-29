@@ -11,4 +11,6 @@ extents = Vector2( 960, 60 )
 shape = SubResource( 1 )
 
 [node name="floor" type="Sprite" parent="."]
+position = Vector2( 2.98023e-08, 3.57628e-06 )
+scale = Vector2( 1, 0.5 )
 texture = ExtResource( 1 )

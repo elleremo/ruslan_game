@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://res/bg.png" type="Texture" id=1]
 [ext_resource path="res://ball.tscn" type="PackedScene" id=2]
-[ext_resource path="res://cube.tscn" type="PackedScene" id=3]
-[ext_resource path="res://floor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://floor.tscn" type="PackedScene" id=3]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Node2D
@@ -49,27 +48,19 @@ func push_cube(mouse_pos):
 	#print(mouse_pos);
 	#add_child();                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
 
-[node name="Node2D" type="Node2D"]
+[node name="main" type="Node2D"]
 script = SubResource( 1 )
 
 [node name="bg" type="Sprite" parent="."]
 position = Vector2( 600, 300 )
-scale = Vector2( 0.625, 0.555556 )
+scale = Vector2( 0.312663, 0.277778 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ball" parent="." instance=ExtResource( 2 )]
-position = Vector2( 320, 430 )
+position = Vector2( 320, 230 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="cube" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 505.6, 439.6 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="floor" parent="." instance=ExtResource( 4 )]
+[node name="floor" parent="." instance=ExtResource( 3 )]
 position = Vector2( 580, 540 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
