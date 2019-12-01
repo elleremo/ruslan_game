@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://res/ball.png" type="Texture" id=1]
-[ext_resource path="res://res/ball2.png" type="Texture" id=2]
-[ext_resource path="res://res/light.png" type="Texture" id=3]
+[ext_resource path="res://res - Copy/light.png" type="Texture" id=2]
+[ext_resource path="res://res/ball2.png" type="Texture" id=3]
+[ext_resource path="res://res/light.png" type="Texture" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends KinematicBody2D
@@ -11,7 +12,7 @@ script/source = "extends KinematicBody2D
 # var a: int = 2
 # var b: String = \"text\"
 
-export var jump_speed: int = -500
+export var jump_speed: int = -1500
 export var gravity: int = 1000
 export var speed:int = 300
 # Called when the node enters the scene tree for the first time.
@@ -62,18 +63,63 @@ func _process(delta):
 [sub_resource type="CircleShape2D" id=2]
 radius = 40.0
 
+[sub_resource type="VisualShaderNodeColorConstant" id=3]
+output_port_for_preview = 0
+constant = Color( 0.734375, 0, 0, 1 )
+
+[sub_resource type="VisualShader" id=4]
+code = "shader_type canvas_item;
+
+
+
+void vertex() {
+// Вывод:0
+
+}
+
+void fragment() {
+// Вывод:0
+
+}
+
+void light() {
+// Вывод:0
+
+}
+"
+graph_offset = Vector2( 0, 36 )
+mode = 1
+flags/light_only = false
+nodes/fragment/0/position = Vector2( 380, 140 )
+nodes/fragment/2/node = SubResource( 3 )
+nodes/fragment/2/position = Vector2( 860, 80 )
+
+[sub_resource type="ShaderMaterial" id=5]
+render_priority = 1
+shader = SubResource( 4 )
+
 [node name="ball" type="KinematicBody2D"]
 script = SubResource( 1 )
-jump_speed = -1000
 gravity = 2000
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
 
 [node name="ball" type="Sprite" parent="."]
+material = SubResource( 5 )
 position = Vector2( 0, 0.0202332 )
 scale = Vector2( 0.4, 0.400202 )
 texture = ExtResource( 1 )
+
+[node name="Light2D" type="Light2D" parent="ball"]
+texture = ExtResource( 2 )
+texture_scale = 6.9
+color = Color( 1, 1, 1, 0.611765 )
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0.909804 )
+shadow_gradient_length = 18.0
+shadow_filter = 2
+shadow_filter_smooth = 19.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 editor/display_folded = true
@@ -87,13 +133,13 @@ disabled = true
 [node name="ball2" type="Sprite" parent="CollisionPolygon2D"]
 visible = false
 position = Vector2( 4.668, -16.8659 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="Light2D" type="Light2D" parent="CollisionPolygon2D"]
 visible = false
 position = Vector2( 3.89856, 1.8949 )
 scale = Vector2( 2.22869, 1.47094 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 color = Color( 0.776471, 0.372549, 0.780392, 0.117647 )
 energy = 2.0
 shadow_enabled = true
