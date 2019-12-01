@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+resource_local_to_scene = true
+script/source = "extends Node2D
+
+var list = Array();
+var is_start = false;
+onready var timer = get_node(\"Timer\");
+
+# Declare member variables here. Examples:
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	timer.set_wait_time( 2 );
+	timer.connect(\"timeout\", self, \"_on_Timer_timeout\");
+	timer.start()
+	pass # Replace with function body.
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta: float) -> void:
+#	pass
+
+func _on_Timer_timeout():
+    print('TIMER')
+
+func _process(delta: float) -> void:
+	#var w_size = get_viewport_rect();
+	#get_window()
+	#print(time.time_left)
+	
+	removeCube()
+	get_input();
+
+func removeCube():
+	#var vsize = get_viewport_rect();
+	if !list.empty():
+		print('LEFT');
+		if (list[0].global_position.x < 500):
+			print('LEFT');
+			remove_child(list[0])
+			list[0].free();
+			list.remove(0)
+			
+			#remove_child(z)
+			#print()
+			#list[0].position.x = 700	 
+
+func get_input():
+	var click = Input.is_action_just_pressed(\"ml\")
+	if click:
+		push_cube(position);
+		#print(position)
+	#	print($bg.texture.get_size())
+	#if right:
+	#	velocity.x = speed
+	
+func push_cube(pos:Vector2):
+	var cube:KinematicBody2D = preload(\"res://cube.tscn\").instance();
+	var size_cube = cube.get_node(\"cube\").texture.get_size()
+	var offset_y = size_cube * cube.get_node(\"cube\").scale
+	#print(offset_y)		
+	#print(size_cube)
+	#add_child(cube_inst._init());
+	#var s = String(get_tree().get;
+	 #.add_child(cube);
+#	cube.position.y -= offset_y;
+	list.append(cube)
+	#print(list)
+	cube.position.y = -offset_y.y/4;
+	add_child(cube)
+	pass
+	#print(pos);
+	#add_child();            "
+
+[node name="emmiter" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
