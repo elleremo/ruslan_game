@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/photo_2019-11-22_23-43-04.jpg-2e5b46dca1e3027b0715142e1221431a.stex"
+path="res://.import/back.jpg-4e07ecb0050fdb8f1bb4eea148504f92.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://res/photo_2019-11-22_23-43-04.jpg"
-dest_files=[ "res://.import/photo_2019-11-22_23-43-04.jpg-2e5b46dca1e3027b0715142e1221431a.stex" ]
+source_file="res://res/back.jpg"
+dest_files=[ "res://.import/back.jpg-4e07ecb0050fdb8f1bb4eea148504f92.stex" ]
 
 [params]
 
@@ -19,9 +19,9 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=1
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
