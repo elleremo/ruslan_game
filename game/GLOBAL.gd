@@ -22,7 +22,7 @@ func get_input():
 			slow +=0.02
 		if slow>1:
 			slow=1	
-		print("SLOW")
+		#print("SLOW")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print('FROM GLOBAL')

@@ -27,7 +27,7 @@ func get_floor():
 	#print( get_transform())
 	#print (get_viewport_transform()) #получить масштаб окна
 	#print ($floor.position)
-	print ($floor.get_viewport())
+	#print ($floor.get_viewport())
 	pass
 	
 func _ready() -> void:
@@ -44,7 +44,7 @@ func _ready() -> void:
 script = SubResource( 1 )
 
 [node name="cube" parent="." instance=ExtResource( 1 )]
-position = Vector2( 530, 450 )
+position = Vector2( 470, 447.5 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="ball" parent="." instance=ExtResource( 2 )]
@@ -91,6 +91,9 @@ position = Vector2( 1380, 480 )
 position = Vector2( 600, 300 )
 scale = Vector2( 0.312663, 0.277778 )
 texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 visible = false
