@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://res/ball.png" type="Texture" id=1]
 [ext_resource path="res://res/ball2.png" type="Texture" id=2]
 [ext_resource path="res://res/light.png" type="Texture" id=3]
+[ext_resource path="res://privet.wav" type="AudioStream" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends KinematicBody2D
@@ -15,11 +16,15 @@ export var jump_speed: int = -1500
 export var gravity: int = 1000
 export var speed:int = 300
 var emmiter;
+var camera;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	DB.au = $s_up; 
 	#emmiter = get_tree().root.get_node(\"/root/main/\")
 	#print('EM: ', emmiter)
+#	camera = DB.root.get_node('cube');
+	
 	pass # Replace with function body.
 
 
@@ -41,6 +46,9 @@ func get_input():
 	if is_on_floor() and jump:
 		velocity.y = jump_speed
 		
+		#$s_up.pitch_scale(0.5)
+		$s_up.play(0.1)
+		 
 		
 	if stop and (velocity.y < 0):
 		velocity.y = 0
@@ -140,3 +148,7 @@ color = Color( 0.776471, 0.372549, 0.780392, 0.117647 )
 energy = 2.0
 shadow_enabled = true
 shadow_filter_smooth = 5.0
+
+[node name="s_up" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+bus = "up"

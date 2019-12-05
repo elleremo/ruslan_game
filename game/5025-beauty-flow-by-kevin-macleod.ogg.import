@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/5025-beauty-flow-by-kevin-macleod.ogg-dd2428b99148f46186f18261eb195ce9.oggstr"
+
+[deps]
+
+source_file="res://5025-beauty-flow-by-kevin-macleod.ogg"
+dest_files=[ "res://.import/5025-beauty-flow-by-kevin-macleod.ogg-dd2428b99148f46186f18261eb195ce9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
