@@ -22,7 +22,7 @@ func _ready() -> void:
 
 func _on_Timer_timeout():
 	#print('TIMER');
-	timer.set_wait_time( rand_range(0.1, 1.0) );
+	timer.set_wait_time( rand_range(0.5, 2.0) );
 	push_cube();
 
 func _process(delta: float) -> void:
