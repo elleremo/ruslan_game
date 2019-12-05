@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://res/ball.png" type="Texture" id=1]
-[ext_resource path="res://res/ball2.png" type="Texture" id=2]
-[ext_resource path="res://res/light.png" type="Texture" id=3]
+[ext_resource path="res://res/ball2.png" type="Texture" id=1]
+[ext_resource path="res://res/light.png" type="Texture" id=2]
+[ext_resource path="res://res/ball.png" type="Texture" id=3]
 [ext_resource path="res://privet.wav" type="AudioStream" id=4]
 
 [sub_resource type="GDScript" id=1]
@@ -116,38 +116,36 @@ shader = SubResource( 4 )
 script = SubResource( 1 )
 gravity = 2000
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
-
-[node name="ball" type="Sprite" parent="."]
-material = SubResource( 5 )
-position = Vector2( 0, 0.0202332 )
-scale = Vector2( 0.4, 0.400202 )
-texture = ExtResource( 1 )
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-editor/display_folded = true
-visible = false
 position = Vector2( -9.84021, 5.57402 )
 scale = Vector2( 1.5819, 1.5819 )
 build_mode = 1
 polygon = PoolVector2Array( 33.0741, 25.0075, 15.5926, 49.6002, -7.22223, 51.0816, -21.1482, 45.7483, -34.4815, 18.489, -35.0741, 8.41493, -41.2963, -6.6962, -40.1112, -23.8814, -31.8148, -56.1777, -3.66667, -77.8074, 24.7778, -83.7333, 46.1112, -69.8074, 50.2593, -54.1037, 53.2223, -42.5481, 51.1482, -9.36286, 49.3704, 7.82233 )
-disabled = true
 
 [node name="ball2" type="Sprite" parent="CollisionPolygon2D"]
-visible = false
 position = Vector2( 4.668, -16.8659 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 
 [node name="Light2D" type="Light2D" parent="CollisionPolygon2D"]
-visible = false
 position = Vector2( 3.89856, 1.8949 )
 scale = Vector2( 2.22869, 1.47094 )
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 color = Color( 0.776471, 0.372549, 0.780392, 0.117647 )
 energy = 2.0
 shadow_enabled = true
 shadow_filter_smooth = 5.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="ball" type="Sprite" parent="."]
+visible = false
+material = SubResource( 5 )
+position = Vector2( 0, 0.0202332 )
+scale = Vector2( 0.4, 0.400202 )
+texture = ExtResource( 3 )
 
 [node name="s_up" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 4 )

@@ -8,10 +8,10 @@ extents = Vector2( 1400, 160 )
 [node name="floor" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 100 )
+position = Vector2( 0, -0.000396729 )
 shape = SubResource( 1 )
 
 [node name="floor" type="Sprite" parent="."]
-position = Vector2( 2.98023e-08, 100 )
+position = Vector2( 0, -0.000396729 )
 scale = Vector2( 1, 1.33333 )
 texture = ExtResource( 1 )

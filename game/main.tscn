@@ -69,7 +69,8 @@ script/source = "extends Camera2D
 # var b = \"text\"
 var ox = 0.0;
 var oy = 0.0;
-var z = 1;
+var z = zoom;
+var tosmal = .8
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#print('fdf')
@@ -84,9 +85,8 @@ func get_input():
 	if space_down:
 		#camera = DB.main.get_node('my_camera')
 		
-		zoom = zoom.linear_interpolate(Vector2(.85,.85), .01)
+		zoom = zoom.linear_interpolate(Vector2(tosmal,tosmal), .01)
 		 
-		
 		 
 		#var o = offset.linear_interpolate( Vector2(rand_range(-50,50),rand_range(-5,5)), .1 )
 		#offset = o
@@ -103,8 +103,9 @@ func get_input():
 		ox = lerp(ox, 0, 0.03)
 		oy = lerp(oy, 0, 0.03)
 		offset = Vector2(rand_range(-ox,ox), rand_range(-oy,oy))
+		limit_bottom=800
 		
-		zoom = zoom.linear_interpolate(Vector2(1,1), .05);
+		zoom = zoom.linear_interpolate(z, .05);
 		 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -118,17 +119,17 @@ script = SubResource( 1 )
 
 [node name="bg" type="Sprite" parent="."]
 material = SubResource( 5 )
-position = Vector2( 600, 300 )
-scale = Vector2( 0.312663, 0.277778 )
+position = Vector2( 960, 540 )
+scale = Vector2( 0.500261, 0.5 )
 texture = ExtResource( 1 )
 
 [node name="cube" parent="." instance=ExtResource( 2 )]
-position = Vector2( 470, 447.5 )
+position = Vector2( 500, 700 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="floor" parent="." instance=ExtResource( 3 )]
 light_mask = 0
-position = Vector2( 950, 660 )
+position = Vector2( 960, 920 )
 
 [node name="ball" parent="." instance=ExtResource( 4 )]
 light_mask = 0
@@ -138,20 +139,26 @@ jump_speed = -700
 
 [node name="my_camera" type="Camera2D" parent="ball"]
 material = SubResource( 7 )
-position = Vector2( 0, -180 )
+position = Vector2( 0, 15 )
 current = true
-limit_left = -500
-limit_top = 0
-limit_right = 1500
-limit_bottom = 900
-drag_margin_h_enabled = false
-drag_margin_v_enabled = false
+process_mode = 0
+limit_left = -600
+limit_top = -500
+limit_right = 2500
+limit_bottom = 800
+limit_smoothed = true
 smoothing_enabled = true
-smoothing_speed = 1.0
+smoothing_speed = 2.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.4
+drag_margin_bottom = 0.79
 editor_draw_limits = true
+editor_draw_drag_margin = true
 script = SubResource( 8 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 margin_left = 501.0
 margin_top = 27.0
 margin_right = 642.0
@@ -162,9 +169,10 @@ and
 Mouse click"
 
 [node name="emmiter" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1020, 600 )
+position = Vector2( 1500, 760 )
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
+visible = false
 stream = ExtResource( 6 )
 volume_db = -7.591
 autoplay = true
