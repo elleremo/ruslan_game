@@ -17,21 +17,23 @@ export var gravity: int = 1000
 export var speed:int = 300
 var emmiter;
 var camera;
+ 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	DB.au = $s_up; 
 	#emmiter = get_tree().root.get_node(\"/root/main/\")
 	#print('EM: ', emmiter)
-#	camera = DB.root.get_node('cube');
+	camera = $'my_camera'
+ 
 	
 	pass # Replace with function body.
 
 
 
-
 var velocity = Vector2()
 
+ 
 func get_input():
 	velocity.x = 0
 	var jump = Input.is_action_pressed(\"up\")
@@ -56,11 +58,13 @@ func get_input():
 		velocity.x = speed
 	if left:
 		velocity.x = -speed
-
+		
+	
 func _process(delta):
 	#if is_on_floor() and !emmiter.list.empty():
 	#	print(emmiter.list[0].global_position.x<position.x)
 	get_input()
+#	camera.get_input()
 	velocity.y += gravity * delta * DB.slow;
 	#velocity.x *= delta
 	move_and_slide(velocity*DB.slow, Vector2(0, -1), true);
@@ -87,17 +91,17 @@ code = "shader_type canvas_item;
 
 
 void vertex() {
-// Вывод:0
+// Output:0
 
 }
 
 void fragment() {
-// Вывод:0
+// Output:0
 
 }
 
 void light() {
-// Вывод:0
+// Output:0
 
 }
 "

@@ -22,7 +22,8 @@ func _process(delta):
 	position += velocity*DB.slow*delta;
 	#position.x += speed*delta * DB.slow
 	# Called every frame. 'delta' is the elapsed time since the previous frame.
-	pass"
+	pass
+"
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 28.1554, 48.3729 )
@@ -46,18 +47,20 @@ func _ready() -> void:
 "
 
 [sub_resource type="OccluderPolygon2D" id=3]
-polygon = PoolVector2Array( -6.76138, -48.8613, 5.69145, -47.8846, 8.37736, -35.1876, 8.86571, -2.46837, 12.04, 19.7514, 27.1787, 21.9489, 34.9922, 30.7392, 35.4806, 44.657, 16.6792, 46.8546, -15.0633, 43.9245, -18.97, -32.7458, -15.3074, -43.4895 )
+polygon = PoolVector2Array( -6.73848, -51.0804, 5.69145, -47.8846, 8.37736, -35.1876, 8.86571, -2.46837, 12.04, 19.7514, 27.1787, 21.9489, 34.9922, 30.7392, 35.4806, 44.657, 16.6792, 46.8546, -15.0633, 43.9245, -18.97, -32.7458, -15.3074, -43.4895 )
 
 [node name="cube" type="KinematicBody2D"]
-scale = Vector2( 0.5, 0.5 )
+rotation = 1.61807
+scale = Vector2( 2, 2 )
 script = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -109.28, 4.2057 )
-scale = Vector2( 1.22629, 0.821786 )
+position = Vector2( -108.484, -11.1987 )
+scale = Vector2( 1.21521, -0.704865 )
 polygon = PoolVector2Array( 119.488, 51.4476, 76.8692, 51.8955, 75.3685, 2.62998, 74.7683, -58.2801, 85.8732, -65.446, 94.5771, -58.2801, 98.4788, 17.8575, 118.888, 21.8883 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 8.05772, -0.976685 )
 shape = SubResource( 4 )
 disabled = true
@@ -72,7 +75,10 @@ texture = ExtResource( 1 )
 position = Vector2( 8.18228, -1.0248 )
 scale = Vector2( 0.77971, 0.711213 )
 texture = ExtResource( 1 )
+flip_v = true
 script = SubResource( 2 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2( 0.141758, -3.18904 )
+scale = Vector2( 1.03259, -0.970293 )
 occluder = SubResource( 3 )

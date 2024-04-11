@@ -37,7 +37,8 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-                                                                                                                                                                                                                                                                                                                                                                                                                                          "
+																																																																																																										  
+"
 
 [sub_resource type="VisualShaderNodeColorConstant" id=2]
 output_port_for_preview = 0
@@ -46,6 +47,27 @@ constant = Color( 0.425195, 0.000689346, 0.000689346, 1 )
 [sub_resource type="VisualShaderNodeTransformConstant" id=3]
 
 [sub_resource type="VisualShader" id=4]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx, async_visible;
+
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Output:0
+
+}
+
+void light() {
+// Output:0
+
+}
+"
 graph_offset = Vector2( -137.74, 54.945 )
 nodes/fragment/2/node = SubResource( 2 )
 nodes/fragment/2/position = Vector2( 60, 320 )
@@ -56,6 +78,27 @@ nodes/fragment/3/position = Vector2( -20, 440 )
 shader = SubResource( 4 )
 
 [sub_resource type="VisualShader" id=6]
+code = "shader_type spatial;
+render_mode specular_schlick_ggx, async_visible;
+
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Output:0
+
+}
+
+void light() {
+// Output:0
+
+}
+"
 graph_offset = Vector2( -35.46, 105.75 )
 
 [sub_resource type="ShaderMaterial" id=7]
@@ -70,14 +113,13 @@ script/source = "extends Camera2D
 var ox = 0.0;
 var oy = 0.0;
 var z = zoom;
-var tosmal = .8
+var tosmal = .7
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#print('fdf')
 	pass # Replace with function body.
-	
-func get_input():
-	
+
+func get_input() -> void:
 	
 	var space_down = Input.is_action_pressed(\"space\");
 	var space_up = Input.is_action_just_released(\"space\");
@@ -93,7 +135,7 @@ func get_input():
 		#print(offset)
 		ox = lerp(ox, 5, 0.01)
 		oy = lerp(oy, 5, 0.01)
-		offset = Vector2(rand_range(-ox,ox), rand_range(-oy,oy))
+#		offset = Vector2(rand_range(-ox,ox), rand_range(-oy,oy))
 		
 		pass
 		#offset_h = rand_range(-1,1);
@@ -102,13 +144,15 @@ func get_input():
 	else:
 		ox = lerp(ox, 0, 0.03)
 		oy = lerp(oy, 0, 0.03)
-		offset = Vector2(rand_range(-ox,ox), rand_range(-oy,oy))
-		limit_bottom=800
+#		offset = Vector2(rand_range(-ox,ox), rand_range(-oy,oy))
+#		limit_bottom=800
 		
 		zoom = zoom.linear_interpolate(z, .05);
 		 
+	
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(delta: float):
 	get_input()
 	pass
 "
@@ -128,31 +172,28 @@ position = Vector2( 500, 700 )
 scale = Vector2( 0.25, 0.25 )
 
 [node name="floor" parent="." instance=ExtResource( 3 )]
+self_modulate = Color( 0.968627, 0.0941176, 0.0941176, 1 )
 light_mask = 0
-position = Vector2( 960, 1220 )
+position = Vector2( 985, 1237 )
 
 [node name="ball" parent="." instance=ExtResource( 4 )]
 light_mask = 0
-position = Vector2( 678.051, 426.75 )
-scale = Vector2( 0.5, 0.5 )
-jump_speed = -700
+position = Vector2( 678, 425 )
+jump_speed = -900
 
 [node name="my_camera" type="Camera2D" parent="ball"]
 material = SubResource( 7 )
-position = Vector2( -429.911, 965.705 )
+position = Vector2( 8.94897, -13.75 )
+scale = Vector2( 0.997855, 1 )
 current = true
 process_mode = 0
-limit_left = -600
-limit_top = 400
-limit_right = 2500
-limit_bottom = 900
-limit_smoothed = true
+limit_left = -670
+limit_top = -476
+limit_right = 2491
+limit_bottom = 1286
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
 smoothing_enabled = true
-smoothing_speed = 2.0
-drag_margin_left = 0.0
-drag_margin_top = 0.0
-drag_margin_right = 0.0
-drag_margin_bottom = 1.0
 editor_draw_limits = true
 editor_draw_drag_margin = true
 script = SubResource( 8 )
@@ -169,10 +210,8 @@ and
 Mouse click"
 
 [node name="emmiter" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1660.42, 1061 )
+position = Vector2( 1661, 1035 )
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
-visible = false
 stream = ExtResource( 6 )
-volume_db = -7.591
 autoplay = true

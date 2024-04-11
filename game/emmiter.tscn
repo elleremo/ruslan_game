@@ -78,7 +78,7 @@ func get_input():
 	#	velocity.x = speed
 	
 func push_cube():
-	var cube:KinematicBody = preload(\"res://cube.tscn\").instance();
+	var cube:KinematicBody2D = preload(\"res://cube.tscn\").instance();
 	var size_cube = cube.get_node(\"cube\").texture.get_size()
 	var offset_y = size_cube * cube.get_node(\"cube\").scale
 	#print(offset_y)		
@@ -95,7 +95,8 @@ func push_cube():
 	add_child(cube)
 	pass
 	#print(pos);
-	#add_child();            "
+	#add_child();            
+"
 
 [node name="emmiter" type="Node2D"]
 script = SubResource( 1 )
